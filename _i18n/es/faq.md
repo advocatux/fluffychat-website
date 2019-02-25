@@ -1,13 +1,13 @@
 # Preguntas frecuentes
 
-*   [Configuración de la cuenta](#configuracion-de-la-cuenta)
+*   [Configuración de la cuenta](#configuración-cuenta)
 *   [Comenzar a chatear](#comenzar-chat)
-*   [Configuración del chat](#configuracion-chat)
+*   [Configuración del chat](#configuración-chat)
 *   [Pasarela a otros sistemas de chat](#pasarela-a-otros-sistemas-de-chat)
-*   [Gestión de errores](#gestion-errores)
+*   [Gestión de errores](#gestión-errores)
 *   [Acerca de FluffyChat](#acerca-de-fluffychat)
 
-## Configuración de la cuenta <a id="configuracion-de-la-cuenta"></a>
+## Configuración de la cuenta
 
 #### ¿Cómo puedo restablecer mi contraseña?
 
@@ -45,7 +45,7 @@ Matrix es una red federada de «homeservers» (servidores de datos). ¿Qué sign
 Los usuarios en Matrix son identificados internamente vía un «ID» de Matrix. Sin embargo, identificadores actuales de terceras partes («3PID») como las direcciones de correo electrónico o los números de teléfono deberían usarse públicamente para identificar a los usuarios de Matrix, al menos para las invitaciones. Una «identidad» de Matrix describe tanto el «ID» del usuario como cualquier otros «IDs» de terceras partes enlazadas a sus cuentas.  
 Los usuarios de Matrix pueden enlazar «IDs» de terceras partes («3PIDs») a sus «ID» de usuario. Enlazando «3PIDs» se crea un mapeo desde un «3PID» a un «ID» de usuario. Este mapeo puede luego ser usado por los usuarios de Matrix para descubrir los «MXIDs» de sus contactos. Para asegurar que el mapeo desde el «3PID» a un «ID» de usuario es genuino, la intención es que haya un grupo globalmente federado de servidores de identidad («IS») de confianza para usarlo para verificar el «3PID» y continuar y replicar los mapeos. No se necesita el uso de un «IS» para que una aplicación cliente sea parte del ecosistema de Matrix. Sin embargo, sin un cliente no será capaz de buscar «IDs» de usuario usando «3PIDs».
 
-## Comenzar a chatear <a id="comenzar-chat"></a>
+## Comenzar a chatear
 
 #### ¿Cómo puedo comenzar un nuevo chat?
 
@@ -78,99 +78,99 @@ Una comunidad pública tiene una o más direcciones públicas llamadas «alias»
 *   «/roar» (Enviará «msgtype: m.fluffychat.roar») El texto del mensaje será muy grande, en negrita y mayúsculas
 *   «/shrug» Coloca «¯\\(ツ)/¯» al inicio del mensaje
 
-## Configuración del chat <a id="configuracion-chat"></a>
+## Configuración del chat
 
-#### How can I kick or ban a user from a chat?
+#### ¿Cómo puedo expulsar o vetar a un usuario en el chat?
 
-You need the permission to kick or ban a user from a chat.
+Necesita tener los permisos necesarios para expulsar («kick») o vetar («ban») a un usuario en un chat.
 
-1.  Go to the chat
-2.  Go to "Chat infos" in the top right menu
-3.  Find the user you want to kick or ban and swipe the user list item to the right.
-4.  Click on the kick or the ban button and confirm
+1.  Vaya al chat
+2.  Vaya a «información del chat» en el menú superior a la derecha
+3.  Encuentre al usuario que quiere expulsar o vetar y deslice el elemento de la lista de usuarios hacia la derecha.
+4.  Pulse en el botón de expulsar o vetar y confirme
 
-#### How can I change the user permissions in a chat?
+#### ¿Cómo puedo cambiar los permisos de usuario en un chat?
 
-You need the permission to change the user permissions.
+Necesita el permiso para cambiar los permisos de los usuarios.
 
-1.  Go to the chat
-2.  Go to "Chat infos" in the top right menu
-3.  Find the user you want to kick or ban and swipe the user list item to the left.
-4.  Click on the desired user permission button and confirm
+1.  Vaya al chat
+2.  Vaya a «información del chat» en el menú superior a la derecha
+3.  Encuentre al usuario que quiere expulsar o vetar y deslice el elemento de la lista de usuarios hacia la izquierda.
+4.  Pulse en el botón de permiso de usuario que desee y confirme
 
-#### How can I change the chat topic and description?
+#### ¿Cómo puedo cambiar el tema del chat y la descripción?
 
-You need the permission to change the chat topic and description.
+Necesita el permiso para cambiar el tema del chat y la descripción.
 
-1.  Go to the chat
-2.  Go to "Chat infos" in the top right menu
-3.  Click on the top right edit button and enter the desired chat topic and/or description
+1.  Vaya al chat
+2.  Vaya a «información del chat» en el menú superior a la derecha
+3.  Pulse en el botón «editar» superior de la derecha e introduzca el tema y/o descripción que desee
 
-#### How can I edit the chat privacy settings?
+#### ¿Cómo puedo editar la configuración de privacidad del chat?
 
-You need the permission to edit the chat privacy settings.
+Necesita el permiso para editar la configuración de privacidad del chat.
 
-1.  Go to the chat
-2.  Go to "Chat infos" in the top right menu
-3.  Go to "Privacy and security"
-4.  Toggle or untoggle the desired options and edit the user permission options
+1.  Vaya al chat
+2.  Vaya a «información del chat» en el menú superior a la derecha
+3.  Vaya a «privacidad y seguridad»
+4.  Active o desactive las opciones que desee y edite las opciones de permisos de usuario
 
-#### What are chat aliases and how can I edit them?
+#### ¿Cuáles son los alias del chat y como puedo editarlos?
 
-Chat aliases are public chat addresses which can be used to join a chat. You need the chat permissions to change them.
+Los alias de un chat son las direcciones de un chat público que se pueden usar para unirse a un chat. Necesita el permiso del chat para cambiarlos.
 
-1.  Go to the chat
-2.  Go to "Chat infos" in the top right menu
-3.  Go to "Privacy and security"
-4.  Toggle or untoggle the desired options and edit the user permission options
+1.  Vaya al chat
+2.  Vaya a «información del chat» en el menú superior a la derecha
+3.  Vaya a «privacidad y seguridad»
+4.  Active o desactive las opciones que desee y edite las opciones de permisos de usuario
 
-#### How can I send animated stickers with Giphy?
+#### ¿Cómo puedo enviar pegatinas animadas con Giphy?
 
-1.  Start a new chat with [@neb\_giphy:​matrix.org](fluffychat://@neb_giphy:​matrix.org).
-2.  Search for gifs by typing: '!giphy KEYWORD'
-3.  Add an animated sticker by clicking on the sticker and add it to your local sticker collection by clicking on the "+" on the rop right.
+1.  Comience un nuevo chat con [@neb\_giphy:​matrix.org](fluffychat://@neb_giphy:​matrix.org).
+2.  Busques gifs tecleando: «!giphy PALABRACLAVE»
+3.  Añada una pegatina animada pulsando en ella y añádala a su colección de pegatinas local pulsando en el signo «+» en la zona superior derecha.
 
-## Bridge to other chat systems <a id="pasarela-a-otros-sistemas-de-chat"></a>
+## Pasarela a otros sistemas de chat
 
 #### ¿Qué es Matrix?
 
-Matrix is an open standard for interoperable, decentralised, real-time communication over IP. It can be used to power Instant Messaging, VoIP/WebRTC signalling, Internet of Things communication - or anywhere you need a standard HTTP API for publishing and subscribing to data whilst tracking the conversation history.
+Matrix es un estándar abierto, interoperable y descentralizado para la comunicación en tiempo real sobre IP. Se puede usar para mensajería instantánea, voz sobre IP («VoIP/WebRTC»), comunicación de «internet de las cosas» o donde quiera que necesite una API estándar HTTP para publicar y suscribir datos, a la vez que mantiene el histórico de la conversación.
 
-#### How can I enter a XMPP multi-user chat?
+#### ¿Cómo puedo unirme a un chat multi-usuario de XMPP?
 
-The easiest way currently is to use the bridge on matrix.org.  
-Every XMPP multi-user chat has a Jabber identifier (JID) with the format: `chatname@chat.server.abc`  
-The chatname is the **local** part and the chat.server.abc is the **server** part. You can enter this chat by entering the Matrix public room: `#_xmpp_server_local:matrix.org` ([How can I join a public chat?](#HowcanIjoinapublicchat))  
-For the given example this would be: `#_xmpp_chat.server.abc_chatname:matrix.org`
+La manera más sencilla actual es usar la pasarela existente en matrix.org.  
+Cada chat multi-usuario de XMPP tiene un identificador de Jabber («JID») con el formato: `chatname@chat.server.abc`  
+El nombre de chat es la parte **local** y «chat.server.abc» es la parte del **servidor**. Puede unirse a este chat entrando en la sala pública de Matrix: `#_xmpp_server_local:matrix.org` ([¿Cómo puedo unirme a un chat público?](#Cómounirmeaunchatpúblico))  
+Para el ejemplo dado sería: `#_xmpp_chat.server.abc_chatname:matrix.org`
 
-#### How can I enter an IRC node on Freenode?
+#### ¿Cómo puedo entrar en un nodo de IRC en Freenode?
 
-If you want to enter the node `#chatname` on freenode you can just join the public chat: `#freenode_#chatname:matrix.org`  
-Replace `#chatname` with the node you want to join and you are in.
+Si desea entrar al nodo `#chatname` en freenode puede unirse al chat público: `#freenode_#chatname:matrix.org`  
+Sustituya `#chatname` con el nodo que desee y en el que esté.
 
-#### How can I bridge a group chat with a Telegram group chat?
+#### ¿Cómo puedo hacer una pasarela entre un chat de grupo y un grupo de Telegram?
 
-Look at the tutorial on [wayneoutthere.com](https://wayneoutthere.com/how-to-bridge-matrix-telegram/).
+Vea el tutorial en [wayneoutthere.com](https://wayneoutthere.com/how-to-bridge-matrix-telegram/).
 
-## Gestión de errores <a id="gestion-errores"></a>
+## Gestión de errores
 
-#### Why don't I receive push notifications?
+#### ¿Por qué no recibo notificaciones?
 
-Do you have an Ubuntu One account in the system settings?  
-When you go into fluffychat -> Settings -> Notifications -> Targets: Is there a device "UbuntuPhone"?  
-Have you tried to logout and login?  
-Do you have the latest version of FluffyChat installed from the OpenStore?  
-Have you tried to turn airplaine mode on and off again? Sometimes notifications are sent with a delay from the UBports push service (will be fixed soon) If you still have the problem, then please contact me at the room: [#fluffychat:matrix.org](fluffychat://#fluffychat:matrix.org)
+¿Tiene una cuenta de Ubuntu One activada en «configuración del sistema»?  
+Si va a fluffychat -> Configuración -> Notificaciones -> Objetivos: ¿ve algún dispositivo «UbuntuPhone»?  
+¿Ha probado a cerrar la sesión y volverla a abrir?  
+¿Tiene instalada la última versión de FluffyChat disponible en OpenStore?  
+¿Ha probado a activar y desactivar de nuevo el «modo avión»? A veces el servicio de notificaciones de UBports las envía con retraso (será arreglado pronto). Si aún tiene el problema, contácteme en la sala: [#fluffychat:matrix.org](fluffychat://#fluffychat:matrix.org)
 
-#### Why can't I connect with port 8448?
+#### ¿Por qué no puedo conectar con el puerto 8448?
 
-Sorry! confused On port 8448 the most homeservers use a different ssl certificate, which causes an error. Currently the xmlhttprequest in QML does not allow those certificates.
+¡Perdón! Confusamente la mayoría de los «homeservers» (servidores de datos) usan un certificado ssl diferente en el puerto 8448, que produce un error. Actualemente la solicitud «xmlhttp» en QML no permite esa clase de certificados.
 
 #### ¿Por qué no puedo conectar con un certificado auto-firmado?
 
 El mismo problema... Le recomiendo que use un certificado de Let's Encrypt.
 
-## Acerca de FluffyChat <a id="acerca-de-fluffychat"></a>
+## Acerca de FluffyChat
 
 #### ¿Cómo se financia FluffyChat?
 
